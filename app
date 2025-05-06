@@ -1,5 +1,9 @@
 #!/bin/bash
+sub_menu() {
+    echo "Usted está en la sección '$1', seleccione la opción que desea utilizar."
 
+
+}
 #Metodologías Ágiles
 meto_agiles() {
     echo "Bienvenido a la guía rápida de Agile, para continuar seleccione un tema:
@@ -8,6 +12,25 @@ meto_agiles() {
     XP (Programación Extrema)
     Kanban
     Crystal"
+    opt="1"
+    read opt
+
+    case $opt in
+        SCRUM)
+            sub_menu "SCRUM"
+            ;;
+        XP)
+            sub_menu "XP"
+            ;;
+        Kanban)
+            sub_menu "Kanban"
+            ;;
+        Crystal)
+            sub_menu "Crystal"
+            ;;
+        *)echo "Función no válida. Usa: -a (metodologías ágiles), -t (metodologías tradicionales), -x (salir)."
+            ;;
+    esac
 }
 #Metodologías Tradicionales
 meto_tradi() {
@@ -15,7 +38,25 @@ meto_tradi() {
 
     Cascada
     Espiral
-    Modelo V"
+    Modelo_V"
+
+    opt="1"
+    read opt
+
+    case $opt in
+        Cascada)
+            sub_menu "Cascada"
+            ;;
+        Espiral)
+            sub_menu "Espiral"
+            ;;
+        Modelo_V)
+            sub_menu "Modelo V"
+            ;;
+        *)echo "Función no válida. Usa: -a (metodologías ágiles), -t (metodologías tradicionales), -x (salir)."
+            ;;
+    esac
+
 }
 res="e"
 
