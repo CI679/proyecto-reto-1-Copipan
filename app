@@ -1,6 +1,26 @@
 #!/bin/bash
 sub_menu() {
     echo "Usted está en la sección '$1', seleccione la opción que desea utilizar."
+    echo "1. Agregar información"
+    echo "2. Buscar"
+    echo "3. Eliminar información"
+    echo "4. Leer base de información"
+
+    read opt
+
+    case $opt in
+        1)
+            ;;
+        2)
+            ;;
+        3)
+            ;;
+        4)
+            ;;
+        *)
+            echo "Función no válida."
+            ;;
+    esac
 
 
 }
