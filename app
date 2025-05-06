@@ -78,13 +78,9 @@ meto_tradi() {
     esac
 
 }
-res="e"
+res=$1
 
 while [ $res != "-x" ]; do
-    echo "Menú:
-            Introduzca una opción del menú: "
-    read res
-
     case $res in
         -a)
             meto_agiles
@@ -96,7 +92,11 @@ while [ $res != "-x" ]; do
             echo "Saliendo del programa, hasta pronto!"
             ;;
         *)
-            echo "Función no válida. Usa: -a (metodologías ágiles), -t (metodologías tradicionales), -x (salir)."
+            echo -e "Función no válida. \nPor favor usa: -a (metodologías ágiles), -t (metodologías tradicionales), -x (salir)."
             ;;
     esac
+
+        echo -e "\n\n   Introduzca una opción del menú: "
+    read res
+
 done
