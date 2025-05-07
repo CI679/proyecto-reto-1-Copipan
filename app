@@ -23,6 +23,15 @@ sub_menu() {
                 echo "Información agregada exitosamente al archivo '$archivo'."
                 ;;
             2)
+		echo -n "Ingrese el concepto que desee buscar: "
+    		read busqueda
+    		archivo="${1}.inf"
+    		if grep -E "\[$busqueda\]" "$archivo" > /dev/null; then
+        	echo "Identificador encontrado en base al concepto buscado."
+        	grep -E "\[$busqueda\]" "$archivo"
+    		else
+        	echo "El concepto '$busqueda' no existe o no se encontró."
+	        fi
                 ;;
             3)
                 ;;
@@ -35,9 +44,7 @@ sub_menu() {
             *)
                 echo "Opción no válida, intente nuevamente."
             ;;
-        esac
-        echo ""
-    done
+
 
 }
 #Metodologías Ágiles
