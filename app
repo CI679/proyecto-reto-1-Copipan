@@ -36,6 +36,17 @@ sub_menu() {
             3)
                 ;;
             4)
+                archivo="${1}.inf"
+                if [[ -f "$archivo" ]]; then
+                    if [[ -s "$archivo" ]]; then
+                        echo "Contenido del archivo '$archivo':"
+                        cat "$archivo"
+                    else
+                        echo "El archivo '$archivo' existe, pero no contiene información."
+                    fi
+                else
+                    echo "No hay información para la metodologia '$1'."
+                fi
                 ;;
             5)
                 ;;
