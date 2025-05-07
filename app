@@ -33,8 +33,19 @@ sub_menu() {
         	        echo "El concepto '$busqueda' no existe o no se encontró."
 	            fi
                 ;;
-            3)
-                ;;
+            3)          
+                echo -n "Ingrese el concepto que desee eliminar: "
+                read conceptoAeliminar
+
+                archivo="${1}.inf"
+
+                if grep -q "\[$conceptoAeliminar\]" "$archivo"; then
+                grep -v "\[$conceptoAeliminar\]" "$archivo" > archtemp.inf && mv archtemp.inf "$archivo"
+                echo "El concepto '$conceptoAeliminar' se elimino de manera correcta."
+                else
+                echo "El concepto '$conceptoAeliminar' no existe. Intente de nuevo."
+                fi
+               ;;
             4)
                 archivo="${1}.inf"
                 if [[ -f "$archivo" ]]; then
