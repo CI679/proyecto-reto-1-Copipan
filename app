@@ -1,18 +1,21 @@
 #!/bin/bash
+
+#Sub menú general
 sub_menu() {
     while true; do
-        echo "Usted está en la sección '$1', seleccione la opción que desea utilizar."
+        echo -e "\nUsted está en la sección '$1', seleccione la opción que desea utilizar."
         echo "1. Agregar información"
         echo "2. Buscar"
         echo "3. Eliminar información"
         echo "4. Leer base de información"
         echo "5. Volver al menu anterior"
-        echo "6. Terminar ejecución"
+        echo -e "6. Terminar ejecución\n\t"
 
         read opt
 
         case $opt in
             1)
+                echo -e "\n---   AGREGAR INFORMACIÓN   ---\n"
                 echo -n "Ingrese el concepto: "
                 read concepto
                 echo -n "Ingrese la definición: "
@@ -23,6 +26,7 @@ sub_menu() {
                 echo "Información agregada exitosamente al archivo '$archivo'."
                 ;;
             2)
+                echo -e "\n---   BUSCAR   ---\n"
 		        echo -n "Ingrese el concepto que desee buscar: "
     		    read busqueda
     		    archivo="${1}.inf"
@@ -33,7 +37,8 @@ sub_menu() {
         	        echo "El concepto '$busqueda' no existe o no se encontró."
 	            fi
                 ;;
-            3)          
+            3)       
+                echo -e "\n---   ELIMINAR INFORMACIÓN   ---\n"   
                 echo -n "Ingrese el concepto que desee eliminar: "
                 read conceptoAeliminar
 
@@ -50,7 +55,7 @@ sub_menu() {
                 archivo="${1}.inf"
                 if [[ -f "$archivo" ]]; then
                     if [[ -s "$archivo" ]]; then
-                        echo "Contenido del archivo '$archivo':"
+                        echo -e "\n---   INFORMACIÓN DETALLADA DE $archivo   ---\n"
                         cat "$archivo"
                     else
                         echo "El archivo '$archivo' existe, pero no contiene información."
@@ -60,72 +65,102 @@ sub_menu() {
                 fi
                 ;;
             5)
+                echo -e "\n\t Regresando al menú anterior..."
+                break
                 ;;
             6)
+                echo -e "\n\t Saliendo del programa..."
+                exit
                 ;;
             *)
-                echo "Opción no válida, intente nuevamente."
+                echo "\nOpción no válida, intente nuevamente.\n"
             ;;
         esac
         echo ""
     done
 }
+
 #Metodologías Ágiles
 meto_agiles() {
-    echo "Bienvenido a la guía rápida de Agile, para continuar seleccione un tema:
+    while true; do
+        echo -e "\nBienvenido a la guía rápida de Agile, para continuar seleccione una opcion:
 
-    SCRUM
-    XP (Programación Extrema)
-    Kanban
-    Crystal"
-    opt="1"
-    read opt
+        SCRUM
+        XP (Programación Extrema)
+        Kanban
+        Crystal
+        Regresar
+        Salir\n\t"
+        read opt
 
-    case $opt in
-        SCRUM)
-            sub_menu "SCRUM"
-            ;;
-        XP)
-            sub_menu "XP"
-            ;;
-        Kanban)
-            sub_menu "Kanban"
-            ;;
-        Crystal)
-            sub_menu "Crystal"
-            ;;
-        *)echo "Función no válida. Usa: -a (metodologías ágiles), -t (metodologías tradicionales), -x (salir)."
-            ;;
-    esac
+        case $opt in
+            SCRUM)
+                sub_menu "SCRUM"
+                ;;
+            XP)
+                sub_menu "XP"
+                ;;
+            Kanban)
+                sub_menu "Kanban"
+                ;;
+            Crystal)
+                sub_menu "Crystal"
+                ;;
+            Regresar)
+                echo -e "\n\t Regresando al menú anterior...\n"
+                break
+                ;;
+            Salir)
+                echo -e "\n\t Saliendo del programa...\n"
+                exit
+                ;;
+            *)echo -e "\nFunción no válida. Usa: SCRUM, XP, Kanban, Crystal, Regresar, Salir.\n"
+                ;;
+        esac
+    done
 }
+
 #Metodologías Tradicionales
 meto_tradi() {
-    echo "Bienvenido a la guía rápida de metodologías tradicionales, para continuar seleccione un tema:
+    while true; do
+        echo -e "\nBienvenido a la guía rápida de metodologías tradicionales, para continuar seleccione una opcion:
 
-    Cascada
-    Espiral
-    Modelo_V"
+        Cascada
+        Espiral
+        Modelo_V
+        Regresar
+        Salir\n\t"
 
-    opt="1"
-    read opt
+        read opt
 
-    case $opt in
-        Cascada)
-            sub_menu "Cascada"
-            ;;
-        Espiral)
-            sub_menu "Espiral"
-            ;;
-        Modelo_V)
-            sub_menu "Modelo V"
-            ;;
-        *)echo "Función no válida. Usa: -a (metodologías ágiles), -t (metodologías tradicionales), -x (salir)."
-            ;;
-    esac
-
+        case $opt in
+            Cascada)
+                sub_menu "Cascada"
+                ;;
+            Espiral)
+                sub_menu "Espiral"
+                ;;
+            Modelo_V)
+                sub_menu "Modelo V"
+                ;;
+            Regresar)
+                echo -e "\n\t Regresando al menú anterior...\n"
+                break
+                ;;
+            Salir)
+                echo -e "\n\t Saliendo del programa...\n"
+                exit
+                ;;
+            *)echo -e "\nFunción no válida. Usa: Cascada, Espiral, Modelo_V, Regresar, Salir.\n"
+                ;;
+        esac
+    done
 }
+
+#Atrapa el valor dado desde la terminal
 res=$1
 
+#Menú Principal Para Elegir Metodologías
 while [ $res != "-x" ]; do
     case $res in
         -a)
@@ -138,11 +173,11 @@ while [ $res != "-x" ]; do
             echo "Saliendo del programa, hasta pronto!"
             ;;
         *)
-            echo -e "Función no válida. \nPor favor usa: -a (metodologías ágiles), -t (metodologías tradicionales), -x (salir)."
+            echo -e "\n\tFunción no válida. Por favor usa las opciones disponibles.\n"
             ;;
     esac
 
-        echo -e "\n\n   Introduzca una opción del menú: "
+        echo -e "\n\n   Introduzca una opción del menú:\n   -a. Metodologías Ágiles\n   -t. Metodologías Tradicionales\n   -x. salir\n\t"
     read res
 
 done
