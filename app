@@ -1,35 +1,43 @@
 #!/bin/bash
 sub_menu() {
-    echo "Usted está en la sección '$1', seleccione la opción que desea utilizar."
-    echo "1. Agregar información"
-    echo "2. Buscar"
-    echo "3. Eliminar información"
-    echo "4. Leer base de información"
+    while true; do
+        echo "Usted está en la sección '$1', seleccione la opción que desea utilizar."
+        echo "1. Agregar información"
+        echo "2. Buscar"
+        echo "3. Eliminar información"
+        echo "4. Leer base de información"
+        echo "5. Volver al menu anterior"
+        echo "6. Terminar ejecución"
 
-    read opt
+        read opt
 
-    case $opt in
-        1)
-            echo -n "Ingrese el concepto: "
-            read concepto
-            echo -n "Ingrese la definición: "
-            read definicion
+        case $opt in
+            1)
+                echo -n "Ingrese el concepto: "
+                read concepto
+                echo -n "Ingrese la definición: "
+                read definicion
 
-            archivo="${1}.inf"
-            echo "[$concepto] .- $definicion" >> "$archivo"
-            echo "Información agregada exitosamente al archivo '$archivo'."
+                archivo="${1}.inf"
+                echo "[$concepto] .- $definicion" >> "$archivo"
+                echo "Información agregada exitosamente al archivo '$archivo'."
+                ;;
+            2)
+                ;;
+            3)
+                ;;
+            4)
+                ;;
+            5)
+                ;;
+            6)
+                ;;
+            *)
+                echo "Opción no válida, intente nuevamente."
             ;;
-        2)
-            ;;
-        3)
-            ;;
-        4)
-            ;;
-        *)
-            echo "Función no válida."
-            ;;
-    esac
-
+        esac
+        echo ""
+    done
 
 }
 #Metodologías Ágiles
