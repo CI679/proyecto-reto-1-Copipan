@@ -10,6 +10,14 @@ sub_menu() {
 
     case $opt in
         1)
+            echo -n "Ingrese el concepto: "
+            read concepto
+            echo -n "Ingrese la definición: "
+            read definicion
+
+            archivo="${1}.inf"
+            echo "[$concepto] .- $definicion" >> "$archivo"
+            echo "Información agregada exitosamente al archivo '$archivo'."
             ;;
         2)
             ;;
