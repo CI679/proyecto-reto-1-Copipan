@@ -5,12 +5,11 @@ sub_menu() {
     while true; do
         echo -e "\nUsted está en la sección '$1', seleccione la opción que desea utilizar."
         echo "1. Agregar información"
-        echo "2. Buscar"
+        echo "2. Buscar Concepto"
         echo "3. Eliminar información"
         echo "4. Leer base de información"
         echo "5. Volver al menu anterior"
         echo -e "6. Terminar ejecución\n\t"
-
         read opt
 
         case $opt in
@@ -22,17 +21,17 @@ sub_menu() {
                 read definicion
 
                 archivo="${1}.inf"
-                echo "[$concepto] .- $definicion" >> "$archivo"
-                echo "Información agregada exitosamente al archivo '$archivo'."
+                echo "[$concepto] .- $definicion" >> "./$2/$archivo"
+                echo "Información agregada exitosamente al archivo '$archivo' dentro de '$2'."
                 ;;
             2)
-                echo -e "\n---   BUSCAR   ---\n"
+                echo -e "\n---   BUSCAR CONCEPTO   ---\n"
 		        echo -n "Ingrese el concepto que desee buscar: "
     		    read busqueda
     		    archivo="${1}.inf"
-    		    if grep -E "\[$busqueda\]" "$archivo" > /dev/null; then
-        	        echo "Identificador encontrado en base al concepto buscado."
-        	        grep -E "\[$busqueda\]" "$archivo"
+    		    if grep -E "\[$busqueda\]" "./$2/$archivo" > /dev/null; then
+        	        echo -e "\nIdentificador encontrado en base al concepto buscado.\n"
+        	        grep -E "\[$busqueda\]" "./$2/$archivo"
     		    else
         	        echo "El concepto '$busqueda' no existe o no se encontró."
 	            fi
@@ -44,8 +43,8 @@ sub_menu() {
 
                 archivo="${1}.inf"
 
-                if grep -q "\[$conceptoAeliminar\]" "$archivo"; then
-                grep -v "\[$conceptoAeliminar\]" "$archivo" > archtemp.inf && mv archtemp.inf "$archivo"
+                if grep -q "\[$conceptoAeliminar\]" "./$2/$archivo"; then
+                grep -v "\[$conceptoAeliminar\]" "./$2/$archivo" > archtemp.inf && mv archtemp.inf "./$2/$archivo"
                 echo "El concepto '$conceptoAeliminar' se elimino de manera correcta."
                 else
                 echo "El concepto '$conceptoAeliminar' no existe. Intente de nuevo."
@@ -53,10 +52,10 @@ sub_menu() {
                ;;
             4)
                 archivo="${1}.inf"
-                if [[ -f "$archivo" ]]; then
-                    if [[ -s "$archivo" ]]; then
+                if [[ -f "./$2/$archivo" ]]; then
+                    if [[ -s "./$2/$archivo" ]]; then
                         echo -e "\n---   INFORMACIÓN DETALLADA DE $archivo   ---\n"
-                        cat "$archivo"
+                        cat "./$2/$archivo"
                     else
                         echo "El archivo '$archivo' existe, pero no contiene información."
                     fi
@@ -95,16 +94,16 @@ meto_agiles() {
 
         case $opt in
             SCRUM)
-                sub_menu "SCRUM"
+                sub_menu "SCRUM" "Metodologías Ágiles"
                 ;;
             XP)
-                sub_menu "XP"
+                sub_menu "XP" "Metodologías Ágiles"
                 ;;
             Kanban)
-                sub_menu "Kanban"
+                sub_menu "Kanban" "Metodologías Ágiles"
                 ;;
             Crystal)
-                sub_menu "Crystal"
+                sub_menu "Crystal" "Metodologías Ágiles"
                 ;;
             Regresar)
                 echo -e "\n\t Regresando al menú anterior...\n"
@@ -135,13 +134,13 @@ meto_tradi() {
 
         case $opt in
             Cascada)
-                sub_menu "Cascada"
+                sub_menu "Cascada" "Metodologías Tradicionales"
                 ;;
             Espiral)
-                sub_menu "Espiral"
+                sub_menu "Espiral" "Metodologías Tradicionales"
                 ;;
             Modelo_V)
-                sub_menu "Modelo V"
+                sub_menu "Modelo V" "Metodologías Tradicionales"
                 ;;
             Regresar)
                 echo -e "\n\t Regresando al menú anterior...\n"
