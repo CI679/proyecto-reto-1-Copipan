@@ -1,6 +1,6 @@
-# Project Title
+# Proyecto del primer parcial - DBP
 
-One Paragraph of project description goes here
+Creación de una aplicación en Bash que permite la visualización y modificación de la información de varias metodologías ágiles y tradicionales mediante menús interactivos.
 
 ## Getting Started
 
@@ -62,17 +62,20 @@ Add additional notes about how to deploy this on a live system
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
+## Contribuciones
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+No se aceptan contribuciones fuera del equipo 3 o del profesor, muchas gracias por su entendimiento.
 
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+## Autores
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **askljdlkas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **lañskdlñas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **aksjdklañlwd** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Abel González Mireles** - *Perfil* - [Copipan](https://github.com/Copipan)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
