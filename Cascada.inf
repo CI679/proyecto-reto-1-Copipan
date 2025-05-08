@@ -1,2 +1,7 @@
-[requisitos] .- Es la fase inicial donde se recopilan y documentan todas las necesidades del cliente para el sistema.
 [mantenimiento] .- Involucra la corrección de errores, mejoras o adaptaciones después de la entrega.
+[requisitos] .- Fase inicial donde se recopilan y documentan todas las necesidades del cliente.
+[diseño] .- Estapa donde se define la arquitectura del sistema y se diseñan los componentes del software.
+[implementacion] .- Fase donde se codifica el sistema basándose en el diseño previamente establecido.
+[verificacion] .- Proceso de prueba para asegurar que el sistema cumple con los requisitos especificados.
+[secuencialidad] .- Característica principal del modelo en la que cada fase debe completarse antes de iniciar la siguiente.
+[planificacion] .- Proceso en el que se definen los objetivos, cronograma y recursos necesarios antes de iniciar el desarrollo.
