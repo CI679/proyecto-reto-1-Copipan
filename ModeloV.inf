@@ -1,0 +1,9 @@
+[Verificacion] .- Se realizan pruebas sin ejecutar codigo, evaluando si se cumplen los requisitos especificados.                
+[Validacion] .- Se realizan pruebas ejecutando codigo, después de la finalización de la fase de desarrollo evaluando los requisitos del cliente.
+[Pruebas Unitarias] .- Se prueban unidades individuales de código fuente para determinar si son aptas para su uso. 
+[Pruebas de Integracion] .- Verifican el correcto ensamblaje entre los distintos componentes una vez que han sido probados unitariamente.
+[Programacion en forma de V] .- Las fases de verificación están en el lado izquierdo de la v y las fases de validación en el lado derecho.
+ 
+
+
+
