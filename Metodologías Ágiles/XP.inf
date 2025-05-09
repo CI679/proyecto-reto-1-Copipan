@@ -1,8 +1,7 @@
 [Pair Programming] .- Dos desarrolladores trabajan juntos en una sola estación de trabajo. 
 [Pruebas Automatizadas] .- Escribir pruebas antes de escribir el código y automatizarlas para garantizar la calidad y facilitar la integración continua.
 [Integración Continua] .- Realizar la integración del código de manera frecuente para detectar errores de forma temprana. 
-[Simplicidad por Diseño] .- Evitar complejidades innecesarias en el código y la estructura del proyecto. 
+[Ciclos cortos de desarrollo] .- El proyecto se divide en iteraciones cortas para que el equipo pueda entregar valor al cliente rápidamente y adaptarse a los cambios. 
 [Comunicación] .- Fomentar la interacción constante y abierta entre el equipo de desarrollo y el cliente.
 [Simplicidad] .- Priorizar la simplicidad del código y la estructura del proyecto para facilitar el mantenimiento y la evolución.
-[Feedback] .- Recibir y proporcionar retroalimentación continua para mejorar el producto y el proceso de desarrollo. 
-[Simplicidad] .- Priorizar la simplicidad del código y la estructura del proyecto para facilitar el mantenimiento y la evolución.
+[Feedback] .- Recibir y proporcionar retroalimentación continua para mejorar el producto y el proceso de desarrollo.

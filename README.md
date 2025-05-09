@@ -56,7 +56,7 @@ Este proyecto tiene una única versión estable y no se planean futuras actualiz
 ## Autores
 
 * **askljdlkas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **lañskdlñas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Sarahy Chaparro Ramírez - 367977** - *sarahy367977* - [sarahy367977](https://github.com/sarahy367977)
 * **César Enrique Batista Garcia** - *Ceba00* - [Ceba00](https://github.com/Ceba00)
 * **Abel González Mireles - 361031** - *Copipan / CopiousPanda* - [Copipan](https://github.com/Copipan)
 
