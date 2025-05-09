@@ -1,0 +1,9 @@
+[Metodologias] .- Conjunto de variantes de Crystal basado en colores adaptados segun las necesidades del equipo.
+[Colores] .- Sistema de clasificación, cada metodlogia de Crystal tiene un color asociado que indica su complejidad y rigidez.
+[Clear] .- Categoria para poyectos pequeños con equipos de hasta 8 personas. 
+[Yellow] .- Categoria para poyectos de 10 a 20 personas. Ofrece flexibilidad y poca formalidad.
+[Orange] .- Categoria para poyectos de 25 a 50 personas. Ofrece equilibrio entre agilidad, coordinacion y comunicacion.
+[Red] .- Categoria para poyectos de 50 a 100 personas. Contempla procesos estructurados y de gran escala.
+[People-centric] .- Enfoque en las personas y su interacción más que en los procesos o herramientas.
+[Tailorability] .- Capacidad de adaptar los procesos según las características del proyecto.
+
