@@ -2,86 +2,65 @@
 
 Creación de una aplicación en Bash que permite la visualización y modificación de la información de varias metodologías ágiles y tradicionales mediante menús interactivos.
 
-## Getting Started
+## Comenzando
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Estas instrucciones te permitirán obtener una copia del proyecto y ejecutarlo localmente para propósitos de desarrollo y prueba.
 
-### Prerequisites
+### Prerequisitos
 
-What things you need to install the software and how to install them
+-Docker
 
-```
-Give examples
-```
+Ejemplo de instalación en Ubuntu:
 
-### Installing
+sudo apt update
+sudo apt install docker.io git
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+### Instalación
 
-```
-Give the example
-```
+1-Descargar y ejecutar la imagen directamente:
 
-And repeat
+docker pull copipan/appEquipo3DBP
+docker run -it copipan/appEquipo3DBP
 
-```
-until finished
-```
+2-También puedes pasar el parámetro inicial directamente:
 
-End with an example of getting some data out of the system or using it for a little demo
+docker run -it copipan/appEquipo3DBP -a
 
-## Running the tests
 
-Explain how to run the automated tests for this system
+## Ejecutando pruebas
 
-### Break down into end to end tests
+Este script no tiene pruebas automatizadas todavía. 
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
+## Construido con
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+Bash – Script principal
+
+Docker – Para empaquetar y ejecutar el entorno de forma portable
+
+ShellCheck – Para análisis estático del script
 
 ## Contribuciones
 
 No se aceptan contribuciones fuera del equipo 3 o del profesor, muchas gracias por su entendimiento.
 
-## Versioning
+## Versionado
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Este proyecto tiene una única versión estable y no se planean futuras actualizaciones.
 
 ## Autores
 
 * **askljdlkas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 * **lañskdlñas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **aksjdklañlwd** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **César Enrique Batista Garcia** - *Ceba00* - [Ceba00](https://github.com/Ceba00)
 * **Abel González Mireles - 361031** - *Copipan / CopiousPanda* - [Copipan](https://github.com/Copipan)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
+## Agradecimientos
 
 * Hat tip to anyone whose code was used
 * Inspiration
