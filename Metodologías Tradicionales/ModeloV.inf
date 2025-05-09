@@ -3,7 +3,8 @@
 [Pruebas Unitarias] .- Se prueban unidades individuales de código fuente para determinar si son aptas para su uso. 
 [Pruebas de Integracion] .- Verifican el correcto ensamblaje entre los distintos componentes una vez que han sido probados unitariamente.
 [Programacion en forma de V] .- Las fases de verificación están en el lado izquierdo de la v y las fases de validación en el lado derecho.
- 
-
-
+[Gestion de Requisitos] .- Define las necesidades del proyecto por lo que reduce los cambios constantes.
+[Diseño Preliminar] .- Etapada de la fase de diseño que tiene como objetivo identificar los principales componentes del sistema.
+[Analisis de Requisitos] .- Etapada de la fase de diseño que tiene como objetivo comprender y documentar detalladamente las necesidades funcionales y no funcionales del proyecto.
+[Diseño Detallado] .- Etapa de la fase de diseño que tiene como objetivo la especificación detallada de cada componente del sistema. 
 
