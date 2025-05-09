@@ -75,9 +75,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **askljdlkas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 * **lañskdlñas** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 * **aksjdklañlwd** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Abel González Mireles** - *Perfil* - [Copipan](https://github.com/Copipan)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Abel González Mireles - 361031** - *Copipan / CopiousPanda* - [Copipan](https://github.com/Copipan)
 
 ## License
 
