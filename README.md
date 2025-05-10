@@ -13,9 +13,9 @@ Estas instrucciones te permitirán obtener una copia del proyecto y ejecutarlo l
 
 Ejemplo de instalación en Ubuntu:
 
-sudo apt update
-sudo apt install docker
-sudo apt install git
+* sudo apt update
+* sudo apt install docker
+* sudo apt install git
 
 
 ### Instalación del proyecto usando Docker
