@@ -20,7 +20,7 @@ sudo apt install git
 
 ### Instalación del proyecto usando Docker
 
-1- Descargar la imagen de Docker usando => docker pull copipan/appEquipo3DBP
+1- Descargar la imagen de Docker usando => docker pull copipan/appequipo3dbp
 
 2.- Crear el contenedor usando (sin olvidar pasar un parámetro al final (-a, -t)) => docker run -it appequipo3dbp -t
 
