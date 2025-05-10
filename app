@@ -72,7 +72,7 @@ sub_menu() {
                 exit
                 ;;
             *)
-                echo "\nOpción no válida, intente nuevamente.\n"
+                echo -e "\nOpción no válida, intente nuevamente.\n"
             ;;
         esac
         echo ""
@@ -140,7 +140,7 @@ meto_tradi() {
                 sub_menu "Espiral" "Metodologías Tradicionales"
                 ;;
             Modelo_V)
-                sub_menu "Modelo V" "Metodologías Tradicionales"
+                sub_menu "Modelo_V" "Metodologías Tradicionales"
                 ;;
             Regresar)
                 echo -e "\n\t Regresando al menú anterior...\n"
